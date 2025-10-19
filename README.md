@@ -1,19 +1,33 @@
 # StradexOS-ISO
 
-> **Status:** Experimental fork of Arch Linux **archiso** with light-touch defaults for **Archinstall** (Btrfs filesystem + KDE Plasma desktop). All other installer options remain user-selectable at install time.
+> **Status:** Experimental fork of Arch Linux **archiso** with **auto-start archinstall** and multiple filesystem options. The installer automatically launches on boot with a 3-second countdown.
 
 ---
 
 ## What is this?
 
 This repository is a **fork** of the official Arch Linux **[archiso](https://github.com/archlinux/archiso)** project.  
-It keeps the upstream toolchain and profile layout, and adds a minimal tweak so that when you run **archinstall** from the live ISO, it **prefills**:
-- **Filesystem:** `btrfs`
-- **Desktop:** `kde`
+It keeps the upstream toolchain and profile layout, and adds customizations for **StradexOS**:
 
-Everything else (disk layout details, encryption, users, hostname, etc.) is still chosen interactively.
+### ✨ Key Features
+- **Auto-start archinstall**: Automatically launches the installer on boot (with 3-second countdown)
+- **Multiple filesystem options**: Choose from ext4, btrfs, xfs, f2fs, jfs, or nilfs2
+- **All installer options**: Disk layout, encryption, users, hostname, etc. remain user-selectable
 
 > **Not an official Arch Linux project.** This is community work maintained by **Stradex**.
+
+---
+
+## Available Filesystems
+
+When you run archinstall, you can choose from these filesystem options:
+
+- **ext4** - Stable, widely used, excellent compatibility
+- **btrfs** - Advanced features, snapshots, compression, subvolumes
+- **xfs** - High performance, especially with large files
+- **f2fs** - Optimized for flash storage (SSDs, NVMe)
+- **jfs** - Journaled filesystem, good performance
+- **nilfs2** - Continuous snapshotting, good for data recovery
 
 ---
 
