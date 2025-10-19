@@ -1,6 +1,6 @@
 # StradexOS-ISO
 
-> **Status:** Experimental fork of Arch Linux **archiso** with **auto-start archinstall** and multiple filesystem options. The installer automatically launches on boot with a 3-second countdown.
+> **Status:** Experimental fork of Arch Linux **archiso** with **auto-start archinstall** and **btrfs filesystem** defaults. The installer automatically launches on boot with a 3-second countdown.
 
 ---
 
@@ -11,23 +11,20 @@ It keeps the upstream toolchain and profile layout, and adds customizations for 
 
 ### ✨ Key Features
 - **Auto-start archinstall**: Automatically launches the installer on boot (with 3-second countdown)
-- **Multiple filesystem options**: Choose from ext4, btrfs, xfs, f2fs, jfs, or nilfs2
+- **btrfs filesystem**: Optimized for modern systems with snapshots and compression
 - **All installer options**: Disk layout, encryption, users, hostname, etc. remain user-selectable
 
 > **Not an official Arch Linux project.** This is community work maintained by **Stradex**.
 
 ---
 
-## Available Filesystems
+## Filesystem Choice
 
-When you run archinstall, you can choose from these filesystem options:
-
-- **ext4** - Stable, widely used, excellent compatibility
-- **btrfs** - Advanced features, snapshots, compression, subvolumes
-- **xfs** - High performance, especially with large files
-- **f2fs** - Optimized for flash storage (SSDs, NVMe)
-- **jfs** - Journaled filesystem, good performance
-- **nilfs2** - Continuous snapshotting, good for data recovery
+This ISO is optimized for **btrfs** filesystem, which provides:
+- **Snapshots** - Easy system rollbacks and backups
+- **Compression** - Better disk space utilization
+- **Subvolumes** - Flexible directory structure
+- **Copy-on-write** - Efficient storage management
 
 ---
 
