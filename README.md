@@ -11,10 +11,34 @@ It keeps the upstream toolchain and profile layout, and adds customizations for 
 
 ### ✨ Key Features
 - **Auto-start archinstall**: Automatically launches the installer on boot (with 3-second countdown)
+- **Networking setup**: Interactive WiFi/wired configuration with static/dynamic IP options
 - **btrfs filesystem**: Optimized for modern systems with snapshots and compression
 - **All installer options**: Disk layout, encryption, users, hostname, etc. remain user-selectable
 
 > **Not an official Arch Linux project.** This is community work maintained by **Stradex**.
+
+---
+
+## Networking Setup
+
+The ISO includes an interactive networking configuration that runs before archinstall:
+
+### 🔗 Connection Types
+- **WiFi**: Scan and connect to wireless networks with password authentication
+- **Wired**: Automatic ethernet connection setup
+- **Skip**: Option to skip networking if not needed
+
+### 🌐 IP Configuration
+- **Dynamic IP (DHCP)**: Automatic IP assignment from router
+- **Static IP**: Manual configuration with:
+  - IP address and subnet mask
+  - Gateway address
+  - DNS server settings
+
+### ✅ Connectivity Testing
+- Automatic internet connectivity verification
+- Arch Linux mirror accessibility check
+- Fallback options if networking fails
 
 ---
 
